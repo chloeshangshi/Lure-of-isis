@@ -270,6 +270,60 @@ section{
 }
 
 
+/***** Map ******/
+.form input[type=radio].map#USAx + label{
+  width:100%;
+ height:260px;
+  padding-top:35%;
+  text-indent: -9000em;
+  text-align: center;
+  background: #29282b url("../images/map-01.svg" ) no-repeat center 0;
+  background-size: 100% auto;
+}
+.form input[type=radio].map#francex + label{
+  width:100%;
+ height:260px;
+  padding-top:35%;
+  text-indent: -9000em;
+  text-align: center;
+  background: #29282b url("../images/map-02.svg" ) no-repeat center 0;
+  background-size: 100% auto;
+}
+.form input[type=radio].map#belgiumx + label{
+  width:100%;
+ height:260px;
+  padding-top:35%;
+  text-indent: -9000em;
+  text-align: center;
+  background: #29282b url("../images/map-03.svg" ) no-repeat center 0;
+  background-size: 100% auto;
+}
+.form input[type=radio].map#ukx + label{
+  width:100%;
+ height:260px;
+  padding-top:35%;
+  text-indent: -9000em;
+  text-align: center;
+  background: #29282b url("../images/map-04.svg" ) no-repeat center 0;
+  background-size: 100% auto;
+}
+.form input[type=radio].silhouette + label span{
+    display: block;
+    text-indent: 0;
+    background: none;
+}
+.form input[type=radio].silhouette:checked + label{
+  background-position:  0 -266px;
+}
+
+/****** Color of check mark when answering questions *******/
+.glyphicon-ok{
+  color: #00F200;
+}
+.glyphicon-remove{
+  color: red;
+}
+
 
 
 /***** Silhouette Images ******/
