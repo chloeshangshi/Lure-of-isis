@@ -1,0 +1,316 @@
+body{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #29282b;
+  color:#b4b4b4;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Source Sans Pro", "Open Sans", Helvetica, sans-serif;
+}
+
+h1,h2{
+  color:#cbae30;
+}
+
+a{
+  text-decoration: none;
+  color:#ffffff;
+}
+
+/***** Main header ******/
+#main-header{
+  height: 100%;
+  min-height: 800px;
+  min-height: 90vh;
+  background:#b4b4b4 url(/assets/images/background-image-placeholder.jpg) top center / cover no-repeat;
+}
+
+#main-header .main-holder{
+  position: absolute;
+  width: 100%;
+  top:50%;
+  transform: translateY(-50%);
+  left:0;
+}
+
+#main-header h1{
+  width:100%;
+  text-align: center;
+  font-size:6em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 0;
+}
+
+#main-header h2{
+  width:100%;
+  text-align: center;
+  padding: 0 15px;
+  margin: -15px 0 20px;
+}
+
+#main-header p{
+  width:100%;
+  text-align: center;
+}
+
+
+/***** Navbar Scroll ******/
+
+.navbar-holder{
+  height: 52px;
+}
+.main-nav-scrolled{
+  position: fixed;
+  z-index: 100000;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+
+
+/****** Sections *******/
+
+section{
+  position: relative;
+  height: 100%;
+  min-height: 800px;
+  height: 95vh;
+}
+
+
+/****** Explainer Text *******/
+
+.explaination-holder{
+  background: #333
+}
+
+.explanation{
+  position:absolute;
+  width:80%;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size: 1.5em;
+  line-height: 1.7;
+}
+
+
+/****** Choose Your Own Adventure *******/
+#choose-adventure header h1{
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+#choose-adventure p{
+    padding-left: 10px;
+    padding-right: 9px;
+}
+
+
+/****** Quiz Button *******/
+
+.check-answer-button{
+  cursor: pointer;
+  display: block;
+  margin: 5px auto 5px auto;
+  background: none;
+  padding: 11px 40px;
+  font-size: 1.3em;
+  border: 4px solid #ccc;
+  transition: background .1s;
+}
+
+.check-answer-button:hover{
+  background: #fff;
+  border-color:#fff;
+  color: #222730;
+}
+
+.check-answer-button:active{
+  color:#ccc;
+}
+
+/****** Dot Navigation *******/
+
+#bubbleNav{
+  position:fixed;
+  top:50%;
+  right:20px;
+  transform:translateY(-50%);
+  z-index:1000;
+}
+
+#bubbleNav li{
+    display:block;
+    background-color:#777;
+    width:12px;
+    height:12px;
+    border-radius:8px;
+    margin:10px 0;
+    cursor: pointer;
+}
+
+#bubbleNav li.selected{
+  background-color: #fff;
+}
+
+/****** Quiz Question *******/
+
+.quiz-question{
+  position: relative;
+}
+
+.quiz-content{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:100%;
+}
+
+.quiz-question header h2{
+    font-family: Lato;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.quiz-question header{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.form{
+  
+  margin: 30px 20px 30px auto;
+}
+
+.form label{
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+.form *{
+  overflow: visible !important;
+}
+
+.form input[type=radio]{
+  margin  : 0;
+  padding : 0 ;
+  opacity : 0;
+  display: block;
+}
+
+.form input[type=radio] + label{
+  white-space: nowrap;
+}
+
+.form input[type=radio].radio-circle + label{
+  background: #29282b url(../images/radio-button.png) no-repeat 0 0;
+  background-position: 0 0px;
+  display: inline-block;
+  padding-left : 40px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.form input[type=radio].radio-circle:checked + label{
+  background-position : 0 -30px;
+}
+
+.form input[type=radio].people-images:checked{
+    border:2px solid yellow;
+}
+
+
+.form input[type=checkbox]{
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+  display: block;
+}
+
+.form input[type=checkbox] + label{
+  background: #29282b url(../images/checkbox-button.png) no-repeat 0 0;
+  display: inline-block;
+  padding-left : 40px;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+.form input[type=checkbox]:checked + label{
+  background-position : 0 -30px;
+}
+
+
+.quiz-explanation{
+  width: 70%;
+  font-size: 1em;
+  margin: 10px auto;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.learn-more{
+  font-size: .9em;
+}
+
+
+/***** Howmanypeople ******/
+.howmanypeople1{
+    
+
+    
+    
+}
+
+
+
+
+/***** Silhouette Images ******/
+.form input[type=radio].silhouette + label{
+  width:100%;
+ height:260px;
+  padding-top:35%;
+  text-indent: -9000em;
+  text-align: center;
+  background: #29282b url("../images/young-01.svg" ) no-repeat center 0;
+  background-size: 100% auto;
+}
+.form input[type=radio].silhouette + label span{
+    display: block;
+    text-indent: 0;
+    background: none;
+}
+.form input[type=radio].silhouette:checked + label{
+  background-position:  0 -266px;
+}
+
+/****** Color of check mark when answering questions *******/
+.glyphicon-ok{
+  color: #00F200;
+}
+.glyphicon-remove{
+  color: red;
+}
+
+
+
+/****** Media Queries *******/
+@media (max-width:475px){
+  #main-header h1{
+    font-size: 4em;
+  }
+  .explanation{
+    font-size: 1.2em;
+  }
+  .quiz-question header{
+    width: 95%;
+    margin: 0 auto;
+  }
+}
