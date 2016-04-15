@@ -1,3 +1,7 @@
+html,body{
+    overflow-x: hidden;
+}
+
 body{
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background-color: #29282b;
@@ -139,9 +143,17 @@ section{
 #bubbleNav{
   position:fixed;
   top:50%;
+  width: 12px;
   right:20px;
   transform:translateY(-50%);
   z-index:1000;
+}
+
+#bubbleNav ul{
+  display: block;
+  width:12px;
+  margin: 0;
+  padding: 0;
 }
 
 #bubbleNav li{
@@ -149,6 +161,9 @@ section{
     background-color:#777;
     width:12px;
     height:12px;
+    padding: 0;
+    list-style: none;
+    list-style-position: inside;
     border-radius:8px;
     margin:10px 0;
     cursor: pointer;
@@ -201,7 +216,7 @@ section{
 
 .form input[type=radio]{
   margin  : 0;
-  padding : 0 ;
+  padding : 0;
   opacity : 0;
   display: block;
 }
@@ -273,94 +288,85 @@ section{
 /***** Mapx ******/
 .form input[type=radio].mapx#usax + label{
   width:100%;
- height:120px;
-  padding-top:35%;
-  text-indent: -9000em;
+  height:0;
+  padding-top:65%;
   text-align: center;
   background: #29282b url("../images/map-01.svg" ) no-repeat center 0;
   background-size: 100% auto;
 }
+
 .form input[type=radio].mapx#francex + label{
   width:100%;
- height:120px;
-  padding-top:35%;
-  text-indent: -9000em;
+  height:0;
+  padding-top:65%;
   text-align: center;
   background: #29282b url("../images/map-02.svg" ) no-repeat center 0;
   background-size: 100% auto;
 }
 .form input[type=radio].mapx#belgiumx + label{
   width:100%;
- height:120px;
-  padding-top:35%;
-  text-indent: -9000em;
+  height:0;
+  padding-top:65%;
   text-align: center;
   background: #29282b url("../images/map-03.svg" ) no-repeat center 0;
   background-size: 100% auto;
 }
 .form input[type=radio].mapx#ukx + label{
   width:100%;
- height:120px;
-  padding-top:35%;
-  text-indent: -9000em;
+  height:0;
+  padding-top:65%;
   text-align: center;
-  background: #29282b url("../images/map-04.svg" ) no-repeat center 0;
+  background: #29282b url("../images/map-04.svg" ) no-repeat center -5px;
   background-size: 100% auto;
 }
 .form input[type=radio].mapx + label span{
-    display: block;
-    text-indent: 0;
-    background: none;
+    display: inline;
+    height: 0;
 }
 .form input[type=radio].mapx:checked + label{
-  background-position:  0 -100px;
+  background-position:  0 74.25% !important;
 }
 
 
 /***** Mapy ******/
 .form input[type=radio].mapy#usay + label{
   width:100%;
- height:150px;
-  padding-top:35%;
-  text-indent: -9000em;
+  height:0;
+  padding-top:65%;
   text-align: center;
   background: #29282b url("../images/map-01.svg" ) no-repeat center 0;
   background-size: 100% auto;
 }
 .form input[type=radio].mapy#francey + label{
   width:100%;
- height:150px;
-  padding-top:35%;
-  text-indent: -9000em;
+  height:0;
+  padding-top:65%;
   text-align: center;
   background: #29282b url("../images/map-02.svg" ) no-repeat center 0;
   background-size: 100% auto;
 }
 .form input[type=radio].mapy#belgiumy + label{
   width:100%;
- height:150px;
-  padding-top:35%;
-  text-indent: -9000em;
+  height:0px;
+  padding-top:65%;
   text-align: center;
   background: #29282b url("../images/map-03.svg" ) no-repeat center 0;
   background-size: 100% auto;
 }
 .form input[type=radio].mapy#uky + label{
   width:100%;
- height:150px;
-  padding-top:35%;
-  text-indent: -9000em;
+  height:0;
+  padding-top:65%;
   text-align: center;
-  background: #29282b url("../images/map-04.svg" ) no-repeat center 0;
+  background: #29282b url("../images/map-04.svg" ) no-repeat center -5px;
   background-size: 100% auto;
 }
 .form input[type=radio].mapy + label span{
-    display: block;
-    text-indent: 0;
-    background: none;
+    display: inline;
+    height: 0;
 }
 .form input[type=radio].mapy:checked + label{
-  background-position:  0 -266px;
+  background-position:  0 74.25% !important;
 }
 
 
@@ -370,8 +376,8 @@ section{
 /***** Silhouette Images ******/
 .form input[type=radio].silhouette1#person1 + label{
   width:100%;
- height:260px;
-  padding-top:35%;
+  height:0;
+  padding-top:165%;
   text-indent: -9000em;
   text-align: center;
   background: #29282b url("../images/young-01.svg" ) no-repeat center 0;
@@ -379,8 +385,8 @@ section{
 }
 .form input[type=radio].silhouette1#person2 + label{
   width:100%;
- height:260px;
-  padding-top:35%;
+  height:0;
+  padding-top:165%;
   text-indent: -9000em;
   text-align: center;
   background: #29282b url("../images/young-02.svg" ) no-repeat center 0;
@@ -388,8 +394,8 @@ section{
 }
 .form input[type=radio].silhouette1#person3 + label{
   width:100%;
- height:260px;
-  padding-top:35%;
+  height:0;
+  padding-top:165%;
   text-indent: -9000em;
   text-align: center;
   background: #29282b url("../images/young-03.svg" ) no-repeat center 0;
@@ -397,8 +403,8 @@ section{
 }
 .form input[type=radio].silhouette1#person4 + label{
   width:100%;
- height:260px;
-  padding-top:35%;
+  height:0;
+  padding-top:165%;
   text-indent: -9000em;
   text-align: center;
   background: #29282b url("../images/young-04.svg" ) no-repeat center 0;
@@ -409,17 +415,8 @@ section{
     text-indent: 0;
     background: none;
 }
-.form input[type=radio].silhouette1#person1:checked + label{
-  background-position:  0 -266px;
-}
-.form input[type=radio].silhouette1#person2:checked + label{
-  background-position:  0 -266px;
-}
-.form input[type=radio].silhouette1#person3:checked + label{
-  background-position:  0 -266px;
-}
-.form input[type=radio].silhouette1#person4:checked + label{
-  background-position:  0 -266px;
+.form input[type=radio].silhouette1:checked + label{
+  background-position:  0 99% !important;
 }
 
 
@@ -428,8 +425,8 @@ section{
 /***** Silhouette Images 2 ******/
 .form input[type=radio].silhouette2#person5 + label{
   width:100%;
- height:260px;
-  padding-top:35%;
+  height:0;
+  padding-top:165%;
   text-indent: -9000em;
   text-align: center;
   background: #29282b url("../images/old-01.svg" ) no-repeat center 0;
@@ -437,8 +434,8 @@ section{
 }
 .form input[type=radio].silhouette2#person6 + label{
   width:100%;
- height:260px;
-  padding-top:35%;
+  height:0;
+  padding-top:165%;
   text-indent: -9000em;
   text-align: center;
   background: #29282b url("../images/old-02.svg" ) no-repeat center 0;
@@ -446,8 +443,8 @@ section{
 }
 .form input[type=radio].silhouette2#person7 + label{
   width:100%;
- height:260px;
-  padding-top:35%;
+  height:0;
+  padding-top:165%;
   text-indent: -9000em;
   text-align: center;
   background: #29282b url("../images/old-03.svg" ) no-repeat center 0;
@@ -455,8 +452,8 @@ section{
 }
 .form input[type=radio].silhouette2#person8 + label{
   width:100%;
- height:260px;
-  padding-top:35%;
+  height:0;
+  padding-top:165%;
   text-indent: -9000em;
   text-align: center;
   background: #29282b url("../images/old-04.svg" ) no-repeat center 0;
@@ -467,17 +464,8 @@ section{
     text-indent: 0;
     background: none;
 }
-.form input[type=radio].silhouette2#person5:checked + label{
-  background-position:  0 -266px;
-}
-.form input[type=radio].silhouette2#person6:checked + label{
-  background-position:  0 -266px;
-}
-.form input[type=radio].silhouette2#person7:checked + label{
-  background-position:  0 -266px;
-}
-.form input[type=radio].silhouette2#person8:checked + label{
-  background-position:  0 -266px;
+.form input[type=radio].silhouette2:checked + label{
+   background-position:  0 99% !important;
 }
 
 
