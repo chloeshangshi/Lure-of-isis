@@ -1,25 +1,25 @@
 jQuery(document).ready(function ($) {
-  "use strict";
     
 
-    
+ if($(".navbar-holder").length){
   
-  var mn = $("nav.navbar"),
-    mns = "main-nav-scrolled",
-    hdr = $(".navbar-holder").offset().top;
-  
-  $(window).on("resize", function () {
-    hdr = $(".navbar-holder").offset().top;
-  });
+      var mn = $("nav.navbar"),
+        mns = "main-nav-scrolled",
+        hdr = $(".navbar-holder").offset().top;
 
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > hdr) {
-      mn.addClass(mns);
-    } else {
-      mn.removeClass(mns);
-    }
-  });
+      $(window).on("resize", function () {
+        hdr = $(".navbar-holder").offset().top;
+      });
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > hdr) {
+          mn.addClass(mns);
+        } else {
+          mn.removeClass(mns);
+        }
+      });
   
+ }
     
   $("a").on("click", function(evt){
       
@@ -29,6 +29,77 @@ jQuery(document).ready(function ($) {
       }
       
   })
+  
+$("#thumbnail1")[0].addEventListener("loadedmetadata", function(){
+  $("#thumbnail1").hover(function(){
+    $("#thumbnail1")[0].play();
+  }, function(){
+    $("#thumbnail1")[0].pause();
+  });
+});
+  
+  
+  
+$("#thumbnail2")[0].addEventListener("loadedmetadata", function(){
+  $("#thumbnail2").hover(function(){
+    $("#thumbnail2")[0].play();
+  }, function(){
+    $("#thumbnail2")[0].pause();
+  });
+});
+    
+
+    
+    
+$("#thumbnail3")[0].addEventListener("loadedmetadata", function(){
+  $("#thumbnail3").hover(function(){
+    $("#thumbnail3")[0].play();
+  }, function(){
+    $("#thumbnail3")[0].pause();
+  });
+});
+
+    
+$("#thumbnail4")[0].addEventListener("loadedmetadata", function(){
+  $("#thumbnail4").hover(function(){
+    $("#thumbnail4")[0].play();
+  }, function(){
+    $("#thumbnail4")[0].pause();
+  });
+});
+
+
+
+
+    
+$("[data-media]").on("click", function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var videoUrl = $this.attr("data-media");
+    var popup = $this.attr("href");
+    var $popupIframe = $(popup).find("iframe");
+
+    $popupIframe.attr("src", videoUrl);
+
+    $this.closest(".page").addClass("show-popup");
+});
+
+$(".popup").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    $(".page").removeClass("show-popup");
+});
+
+$(".popup > iframe").on("click", function(e) {
+    e.stopPropagation();
+});
+    
+    
+    
+    
+    
+    
   
   //store breakPoints for each quiz question
   var breakPoints = [];

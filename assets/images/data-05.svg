@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g>
+	<g>
+		<g id="XMLID_5_">
+			<g>
+				<path fill="#B4B4B5" d="M55.195,247.68c0,107.602,87.292,194.894,194.894,194.894c0.178,0,0.356,0,0.534,0l-1.069,29.929
+					C125.386,472.146,25.089,371.67,25.089,247.68c0-124.168,100.652-225,225-225v30.107
+					C142.487,52.787,55.195,140.079,55.195,247.68z"/>
+				<path fill="#CCAE2E" d="M250.089,22.68c124.169,0,224.822,100.832,224.822,225c0,124.169-100.653,224.822-224.822,224.822
+					c-0.179,0-0.356,0-0.535,0l1.069-29.929c107.423-0.356,194.181-87.471,194.181-194.894
+					c0-107.601-87.114-194.893-194.715-194.893V22.68z"/>
+			</g>
+			<g>
+				<line fill="none" stroke="#A7A9AC" stroke-miterlimit="10" x1="250.089" y1="22.68" x2="250.089" y2="52.787"/>
+				<polyline fill="none" stroke="#A7A9AC" stroke-miterlimit="10" points="249.554,472.68 249.554,472.502 250.623,442.573 				"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 192.6201 265.4678)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Semibold'" font-size="106.8885">24</tspan><tspan x="-49.506" y="53.444" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="35.6295">when charged</tspan></text>
+	<text transform="matrix(1 0 0 1 196.1367 166.0073)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="26.7221">Median </tspan><tspan x="89.571" y="0" fill="#FFFFFF" font-family="'MyriadPro-Semibold'" font-size="26.7221">is</tspan></text>
+</g>
+</svg>

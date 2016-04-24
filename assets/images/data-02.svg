@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g>
+	<g>
+		<g id="XMLID_2_">
+			<g>
+				<path fill="#B4B4B5" d="M250.089,22.68C374.307,22.68,475,123.551,475,247.769S374.307,472.68,250.089,472.68
+					C125.693,472.68,25,371.986,25,247.769v-0.178h30.119v0.178c0,107.644,87.327,194.97,194.97,194.97
+					s194.792-87.326,194.792-194.97s-87.148-194.97-194.792-194.97V22.68z"/>
+				<path fill="#CCAE2E" d="M250.089,22.68v30.119c-107.644,0-194.792,87.148-194.97,194.792H25
+					C25.179,123.373,125.693,22.68,250.089,22.68z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 86.1499 306.7734)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="35.6435">attended or graduated </tspan><tspan x="118.905" y="35.643" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="35.6435">college</tspan></text>
+	<text transform="matrix(1 0 0 1 142.6768 197.9429)" fill="#FFFFFF" font-family="'MyriadPro-Semibold'" font-size="106.9305">1</text>
+	<line fill="none" stroke="#A7A9AC" stroke-miterlimit="10" x1="55.177" y1="247.78" x2="251.721" y2="247.78"/>
+	<line fill="none" stroke="#A7A9AC" stroke-miterlimit="10" x1="250.146" y1="52.809" x2="250.05" y2="247.691"/>
+	<text transform="matrix(1 0 0 1 285.1138 258.2363)" fill="#FFFFFF" font-family="'MyriadPro-Semibold'" font-size="124.7523">4</text>
+	<text transform="matrix(1 0 0 1 127.0693 232.0933)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="35.6435">out of</text>
+</g>
+</svg>

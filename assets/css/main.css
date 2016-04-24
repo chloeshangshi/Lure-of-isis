@@ -26,7 +26,7 @@ a{
   height: 100%;
   min-height: 800px;
   min-height: 90vh;
-  background:#b4b4b4 url(/assets/images/background-image-placeholder.jpg) top center / cover no-repeat;
+  background:#b4b4b4 url(/assets/images/Sabine.jpg) top center / cover no-repeat;
 }
 
 #main-header .main-holder{
@@ -58,6 +58,39 @@ a{
   text-align: center;
 }
 
+
+#videosList {
+ max-width: 600px; 
+  overflow: hidden;
+}
+
+.video {
+  background-image: url('https://vimeo.com/163164237');
+  height: 330px;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+.thumbnail{
+    border-radius:50%;
+    background-color: black;
+    
+    width:50px;
+    padding:auto;
+}
+
+
+
+.minidoc{
+    align-content: center;
+    
+}
+    
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
 
 /***** Navbar Scroll ******/
 
@@ -265,7 +298,7 @@ section{
 
 .quiz-explanation{
   width: 70%;
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 10px auto;
   padding: 20px;
   line-height: 1.5;
@@ -475,6 +508,120 @@ section{
 }
 .glyphicon-remove{
   color: red;
+}
+
+
+/********Story*********/
+/*
+.article-container{
+    width:50%;
+    margin:8% 25% 10% 25%
+    
+}
+*/
+.article{
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top:20px;
+    font-size:15px;
+    font-family: "Lato";
+    
+    
+}
+
+.article-header{
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top:130px;
+    font-size: 50px;
+/*    font-variant: small-caps;*/
+    font-weight:800; 
+    font-family: "Lato";
+    
+    
+}
+.article-subtitle{
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 45px;
+    font-size:24px;
+    font-family: serif;
+    
+
+    
+    
+}
+.sub{
+    font-size:24px;
+    margin-top:50px;
+    font-weight: 200;
+    font-family: "Lora";
+    font-weight: 900;
+    
+    
+}
+
+
+
+
+em{
+    text-decoration:underline;
+    
+    font-style: normal;
+    text-decoration-style: dashed;
+    
+}
+#horgan1{
+     float:right;
+    margin-right: 30px;
+    width:200px;
+}
+#horgan2{
+    float:right;
+    margin-right: 30px;
+    width:200px;
+    
+    
+}
+
+#jeff{
+    float: left;
+    margin-left: 40px;
+    width:15%;
+    
+}
+#erin1{
+    float: left;
+    margin-left: 40px;
+    
+}
+#erin2{
+    float: right;
+    margin-right: 40px;
+    
+}
+
+#haras1{
+    float:left;
+    margin-left: 40px;
+    
+}
+#haras2{
+    float:left;
+    margin-left: 40px;
+    
+}
+#erin3{
+    float: right;
+    margin-right: 40px;
+    
+}
+.ending{
+    margin-top: 100px;
+    
 }
 
 
