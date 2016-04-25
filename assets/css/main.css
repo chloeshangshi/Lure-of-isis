@@ -22,6 +22,9 @@ a{
 }
 
 /***** Main header ******/
+
+
+
 #main-header{
   height: 100%;
   min-height: 800px;
@@ -40,7 +43,7 @@ a{
 #main-header h1{
   width:100%;
   text-align: center;
-  font-size:6em;
+  font-size:5.5em;
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 0;
@@ -57,6 +60,31 @@ a{
   width:100%;
   text-align: center;
 }
+
+
+.openning{
+  position:absolute;
+  width:80%;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size: 1.5em;
+  line-height: 1.7;
+}
+
+.openning::first-letter{
+     font:60px Lato; 
+    font-weight:bolder; 
+    color:#cbae39;
+     
+}
+
+.who{
+    color:#cbae30;
+    text-decoration: none;
+    
+}
+
 
 
 #videosList {
@@ -623,6 +651,35 @@ em{
     margin-top: 100px;
     
 }
+
+
+/**********Videos********/
+
+.video-page h2{
+  text-align: center;
+  margin-top:50px;
+    
+}
+
+
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe {
+	position:absolute;
+	top:0;
+	left:15%;
+	width:70%;
+	height:70%;
+    
+}
+
 
 
 
