@@ -99,15 +99,25 @@ a{
   margin-bottom: 50px;
 }
 
-.thumbnail{
-    border-radius:50%;
-    background-color: black;
+.firstrow{
+    border:solid white;
     
-    width:50px;
+}
+
+.thumbnail{
+    background-color: black;
+    width:200px;
     padding:auto;
 }
 
-
+#thumbnail1{
+    height:100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width:50%;
+    margin-top:100px;
+    margin-bottom: 20px;
+}
 
 .minidoc{
     align-content: center;
@@ -618,7 +628,7 @@ em{
 #jeff{
     float: left;
     margin-left: 40px;
-    width:15%;
+    width:20%;
     
 }
 #erin1{
@@ -662,6 +672,7 @@ em{
 }
 
 
+/*
 
 .video-container {
 	position:relative;
@@ -676,7 +687,24 @@ em{
 	top:0;
 	left:15%;
 	width:70%;
-	height:70%;
+	
+    
+}
+*/
+.embed-responsive-item{
+
+    padding-top: 30px;
+    
+    padding-left: 70px;
+    padding-right: 70px;
+    
+    
+}
+.video-description{
+    margin-top: 40px;
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
     
 }
 
