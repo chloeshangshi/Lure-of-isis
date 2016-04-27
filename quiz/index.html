@@ -480,7 +480,7 @@
  
     
     
-     <section class="quiz-question container" id="question12">
+  <section class="quiz-question container" id="question12">
     <div class="quiz-content">
       <header>
         <h2>Who is joining ISIS (in America)?</h2>
@@ -514,16 +514,91 @@
               </div>
 
           </div>
-        
-        
-        
-        
-        
-        
-        
-        
-     
     </section>
+  
+    <div class="container" id="database">
+      
+      <!--
+      "name" attribute corresponds to the column header
+      <select name="[column-header]">
+
+      "value" attribute corresponds to items you want to sort
+      <option value="[sort-by]">
+
+      Remember, the attributes are case-sensitive. Everything else can be whatever you want.
+      --->
+      
+      <div class="row">
+        <div class="col-sm-3">
+          
+          <select class="form-control" name="Age">
+            <option value="" selected>Age Range</option>
+            <option value="15-18">15-18</option>
+            <option value="19-24">19-24</option>
+            <option value="25-35">25-35</option>
+            <option value="36-47">36-47</option>
+          </select>
+        
+        </div>
+        <div class="col-sm-3">
+
+          <select class="form-control" name="Gender">
+            <option value="" selected>Gender</option>
+            <option value="Male">Male</option>
+            <option valeu="Female">Female</option>
+          </select>
+        
+        </div>
+        
+        <div class="col-sm-3">
+
+          <select class="form-control" name="Region">
+            <option value="" selected>Region</option>
+            <option value="South">South</option>
+            <option value="West">West</option>
+            <option value="Northeast">Northeast</option>
+            <option value="Midwest">Midwest</option>
+          </select>
+        
+        </div>
+        
+        <div class="col-sm-3">
+
+          <select class="form-control" name="Occupation">
+            <option value="" selected>Occupation</option>
+            <option value="South">South</option>
+            <option value="West">West</option>
+            <option value="Northeast">Northeast</option>
+            <option value="Midwest">Midwest</option>
+          </select>
+        
+        </div>
+          
+      </div>
+      
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  
+    <!-- Pop Up (IN CSS edit the .modal class, or get more specific) -->
+    <div id="popup" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel"></h3>
+          </div>
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div> 
     
     <!-- Footer at the bottom -->
     <footer>
@@ -532,16 +607,99 @@
     </footer>
     
     
-    <div id="articles" class="container">
-    
-    
-    </div>
-    
     
     <!-- JavaScript -->
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/main.js"></script>  
     <script src="/assets/js/bootstrap-slider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+        var oldvalue = "";
+        
+        $.ajax({
+          url: "/assets/data/data_lure_of_isis.json"
+        }).success(function(data){
+          
+    
+          //Create header row
+          for(var prop in data[0]){
+            if(prop !== "Popup"){
+              $("#database table thead tr").append("<td>" + prop.toString() + "</td>");
+            }
+          }
+          
+          //remove first element (header row) of array
+          data.shift();
+          
+          //Go through remaining data
+          data.forEach(function(d, i){
+            
+            var $row = $("<tr />");//make a row, save it in a variable
+            var rowData = {};
+            
+            //add data to each cell
+            for(var prop in d){
+              if(prop !== "Popup"){
+                $row.append("<td>" + d[prop] + "</td>");
+              }
+              rowData[prop] = d[prop];
+            }
+            
+            $row.data(rowData);
+            
+            //append to table
+            $("#database table tbody").append($row);
+            
+          });
+          
+          /******
+          
+          
+          
+          CUSTOMIZE POP UP HERE
+          
+          
+          
+          *******/
+          $("tbody tr").on("click", function(e){
+             
+              //stores the popup information in a variable
+              var popupInfo = $(this).data();
+            
+              
+              //populate the popup with the information
+              $(".modal-title").html(popupInfo['Name']);
+              $(".modal-body").html("<p>" + " Age: " + popupInfo['Age'] + "</p>" + popupInfo['Popup']);
+               
+              //shows the popup
+              $("#popup").modal("show");
+          });
+          
+        }).error(function(a,b,c){
+          console.log(a,b,c); //print error code
+        });
+        
+        
+        $(".form-control").on("change", function(e){
+          $("tbody tr").each(function(i, e){
+            $(this).removeClass("hidden");
+            $(".form-control").each(function(num, elm){
+              if($(elm).val() !== ""){
+                if($(e).data($(elm).attr("name")) !== $(elm).val()){
+                  $(e).addClass("hidden");
+                }
+              }
+            })
+          });
+        });
+        
+
+        
+        
+        
+      })
+    </script>
   </body>
 </html>

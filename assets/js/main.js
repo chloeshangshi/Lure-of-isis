@@ -30,44 +30,48 @@ jQuery(document).ready(function ($) {
       
   })
   
-$("#thumbnail1")[0].addEventListener("loadedmetadata", function(){
-  $("#thumbnail1").hover(function(){
-    $("#thumbnail1")[0].play();
-  }, function(){
-    $("#thumbnail1")[0].pause();
-  });
-});
-  
-  
-  
-$("#thumbnail2")[0].addEventListener("loadedmetadata", function(){
-  $("#thumbnail2").hover(function(){
-    $("#thumbnail2")[0].play();
-  }, function(){
-    $("#thumbnail2")[0].pause();
-  });
-});
-    
+  if($("#thubnail1").length){
+    $("#thumbnail1")[0].addEventListener("loadedmetadata", function(){
+      $("#thumbnail1").hover(function(){
+        $("#thumbnail1")[0].play();
+      }, function(){
+        $("#thumbnail1")[0].pause();
+      });
+    });
+  }
 
-    
-    
-$("#thumbnail3")[0].addEventListener("loadedmetadata", function(){
-  $("#thumbnail3").hover(function(){
-    $("#thumbnail3")[0].play();
-  }, function(){
-    $("#thumbnail3")[0].pause();
-  });
-});
 
-    
-$("#thumbnail4")[0].addEventListener("loadedmetadata", function(){
-  $("#thumbnail4").hover(function(){
-    $("#thumbnail4")[0].play();
-  }, function(){
-    $("#thumbnail4")[0].pause();
-  });
-});
+  if($("#thubnail2").length){
+    $("#thumbnail2")[0].addEventListener("loadedmetadata", function(){
+      $("#thumbnail2").hover(function(){
+        $("#thumbnail2")[0].play();
+      }, function(){
+        $("#thumbnail2")[0].pause();
+      });
+    });
+  }
 
+
+
+  if($("#thubnail3").length){
+    $("#thumbnail3")[0].addEventListener("loadedmetadata", function(){
+      $("#thumbnail3").hover(function(){
+        $("#thumbnail3")[0].play();
+      }, function(){
+        $("#thumbnail3")[0].pause();
+      });
+    });
+  }
+
+  if($("#thubnail4").length){
+    $("#thumbnail4")[0].addEventListener("loadedmetadata", function(){
+      $("#thumbnail4").hover(function(){
+        $("#thumbnail4")[0].play();
+      }, function(){
+        $("#thumbnail4")[0].pause();
+      });
+    });
+  }
 
 
 
